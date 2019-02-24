@@ -97,6 +97,15 @@ define([
     }
 
     defineProperties(BillboardGraphics.prototype, {
+
+        forceUpdate: {
+            get: function() {
+                return this._forceUpdate;
+            },
+            set: function(value) {
+                this._forceUpdate = Boolean(value);
+            }
+        },
         /**
          * Gets the event that is raised whenever a property or sub-property is changed or modified.
          * @memberof BillboardGraphics.prototype
