@@ -95,6 +95,11 @@ define([
             var item = items[i];
             var entity = item.entity;
             var pointGraphics = entity._point;
+
+            if (entity.manualUpdate && !pointGraphics.forceUpdate) {
+                continue;
+            }
+            pointGraphics.forceUpdate = false;
             var pointPrimitive = item.pointPrimitive;
             var billboard = item.billboard;
             var heightReference = Property.getValueOrDefault(pointGraphics._heightReference, time, HeightReference.NONE);

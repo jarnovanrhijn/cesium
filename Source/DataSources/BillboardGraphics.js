@@ -90,6 +90,7 @@ define([
         this._distanceDisplayCondition = undefined;
         this._distanceDisplayConditionSubscription = undefined;
         this._disableDepthTestDistance = undefined;
+        this._forceUpdate = false;
         this._disableDepthTestDistanceSubscription = undefined;
         this._definitionChanged = new Event();
 

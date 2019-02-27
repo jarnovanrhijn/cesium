@@ -258,6 +258,9 @@ define([
                     if (this.billboard) {
                         this.billboard.forceUpdate = 1;
                     }
+                    if (this.point) {
+                        this.point.forceUpdate = 1;
+                    }
                     if (this.label) {
                         this.label.forceUpdate = 1;
                     }
